@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>ZHAO</title>
+<title>Windows编程使用运行时库应忽略的库 | ZHAO</title>
 <meta name="description" content="My Notes">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -23,6 +23,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="zherzhao.github.io">ZHAO</a></h3>
@@ -76,67 +77,52 @@
   </div>
 </nav>
 
-
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
+          <article class="article">
+            <h1>Windows编程使用运行时库应忽略的库</h1>
+            <p class="article-meta">
+              2019-06-25
+              
+            </p>
+            
+            <div class="post-content">
+              <p>下表显示根据要使用的运行时库应忽略的库。
+若要使用第一行运行时库    请忽略第2行的这些库</p>
+<p>单线程 (libc.lib)</p>
+<p>libcmt.lib、msvcrt.lib、libcd.lib、libcmtd.lib、msvcrtd.lib</p>
+<p>多线程 (libcmt.lib)</p>
+<p>libc.lib、msvcrt.lib、libcd.lib、libcmtd.lib、msvcrtd.lib</p>
+<p>使用 DLL 的多线程 (msvcrt.lib)</p>
+<p>libc.lib、libcmt.lib、libcd.lib、libcmtd.lib、msvcrtd.lib</p>
+<p>调试单线程 (libcd.lib)</p>
+<p>libc.lib、libcmt.lib、msvcrt.lib、libcmtd.lib、msvcrtd.lib</p>
+<p>调试多线程 (libcmtd.lib)</p>
+<p>libc.lib、libcmt.lib、msvcrt.lib、libcd.lib、msvcrtd.lib</p>
+<p>使用 DLL 的调试多线程 (msvcrtd.lib)</p>
+<p>libc.lib、libcmt.lib、msvcrt.lib、libcd.lib、libcmtd.lib</p>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
           
-  <article class="article">
-    <h2 class="article-title">
-      <a href="zherzhao.github.io/post/windows-bian-cheng-shi-yong-yun-xing-shi-ku-ying-hu-lue-de-ku">Windows编程使用运行时库应忽略的库</a>
-    </h2>
-    <p class="article-meta">
-      2019-06-25
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="zherzhao.github.io/post/windows-bian-cheng-shi-yong-yun-xing-shi-ku-ying-hu-lue-de-ku" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="zherzhao.github.io/post/hello-gridea">Hello Gridea</a>
-    </h2>
-    <p class="article-meta">
-      2018-12-12
-      
-        <a href="zherzhao.github.io/tag/gridea" class="badge success">
-          Gridea
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>欢迎使用 Gridea！<br>
-Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
-
-    </p>
-    <div class="row">
-      <a href="zherzhao.github.io/post/hello-gridea" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="zherzhao.github.io/post/hello-gridea">
+                <h3 class="post-title">
+                  Hello Gridea
+                </h3>
+              </a>
+            </div>
+          
         </div>
         
-        <div class="row flex-edges">
-  
-  
-</div>
-
       </div>
-      
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="zherzhao.github.io/images/avatar.png?v=1561463146801" class="no-responsive avatar">
@@ -183,7 +169,7 @@ Gridea 一个静态博客写作客户端。你可以用它来记录你的生活�
     </div>
     <div class="row">
       
-        <a href="zherzhao.github.io/tag/gridea" class="badge warning">
+        <a href="zherzhao.github.io/tag/gridea" class="badge success">
           Gridea
         </a>
       
@@ -194,7 +180,9 @@ Gridea 一个静态博客写作客户端。你可以用它来记录你的生活�
   </div>
 </div>
 
+
     </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script type="application/javascript">
