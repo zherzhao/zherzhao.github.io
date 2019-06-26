@@ -80,7 +80,7 @@ body {
 }
 #top {
   max-width: 1440px;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 article .article-meta a {
   color: #ffffff;
@@ -127,11 +127,11 @@ article .article-meta a {
   background-image: none;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 article .article-title,
 h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 nav ul.inline li a {
   display: block;
