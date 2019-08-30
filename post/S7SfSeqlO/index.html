@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Hello Gridea | ZHAO</title>
+<title>Jupyter Notebook简介 | ZHAO</title>
 <meta name="description" content="My Notes">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -81,47 +81,81 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>Hello Gridea</h1>
+            <h1>Jupyter Notebook简介</h1>
             <p class="article-meta">
-              2018-12-12
-              
-                <a href="https://zherzhao.github.io/tag/gridea" class="badge secondary">
-                  Gridea
-                </a>
+              2019-08-30
               
             </p>
             
             <div class="post-content">
-              <p>欢迎使用 Gridea！<br>
-Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
-<!-- more -->
-<h3 id="特性">特性👇</h3>
-<p>你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>你可以对文章进行标签分组</p>
-<p>你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
-<p>你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<h3 id="资源">资源</h3>
-<p><a href="https://github.com/getgridea/gridea">Github</a></p>
-<p><a href="http://hvenotes.fehey.com/">Gridea 主页</a></p>
-<p><a href="http://fehey.com/">示例网站</a></p>
-<p><a href="https://gridea.dev/themes/">网站主题</a></p>
-<h3 id="符号">符号</h3>
-<p>👏📝🌉 🌱😘
-🌁💬🌎 💻📋</p>
+              <p><a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">link</a>
+A notebook integrates <strong>code</strong> and its <strong>output</strong> into a single document that combines visualizations, narrative text, mathematical equations, and other rich media.
+Best of all, as part of the open source <a href="https://jupyter.org/">Project Jupyter</a>, they are completely free.
+The Jupyter project is the successor to the earlier <strong>IPython Notebook</strong>, which was first published as a prototype in 2010.</p>
+<p>There are two main <strong>cell</strong> types that we will cover:</p>
+<ul>
+<li>A <strong>code</strong> cell contains code to be executed in the kernel and displays its output below.</li>
+<li>A <strong>Markdown</strong> cell contains text formatted using Markdown and displays its output in-place when it is run.
+When you ran the cell, its output will have been displayed below and the label to its left will have changed from In [ ] to In [1].</li>
+</ul>
+<pre><code>import time
+time.sleep(3)
+</code></pre>
+<p>This cell doesn't produce any output, but it does take three seconds to execute. Notice how Jupyter signifies that the cell is currently running by changing its label to In [*].</p>
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<p>One final thing you may have observed when running your cells is that their border turned <strong>blue</strong>, whereas it was <strong>green</strong> while you were editing. There is always one &quot;active&quot; cell highlighted with a border whose color denotes its current mode, where <em>green means &quot;edit mode&quot;</em> and <em>blue is &quot;command mode.&quot;</em></p>
+<ul>
+<li><code>Ctrl + Enter</code> run a cell.</li>
+<li>Toggle between edit and command mode with Esc and Enter, respectively.</li>
+<li>Once in command mode:</li>
+<li>Scroll up and down your cells with your Up and Down keys.</li>
+<li>Press A or B to insert a new cell above or below the active cell.</li>
+<li>M will transform the active cell to a Markdown cell.</li>
+<li>Y will set the active cell to a code cell.</li>
+<li>D + D (D twice) will delete the active cell.</li>
+<li>Z will undo cell deletion.</li>
+<li>Hold Shift and press Up or Down to select multiple cells at once.</li>
+<li>With multiple cells selected, Shift + M will merge your selection.</li>
+<li>Ctrl + Shift + -, in edit mode, will split the active cell at the cursor.</li>
+<li>You can also click and Shift + Click in the margin to the left of your cells to select them.</li>
+</ul>
+<h2 id="markdown">Markdown</h2>
+<p>Markdown is a lightweight, easy to learn markup language for formatting plain text.
+Let’s cover the basics with a quick example.</p>
+<pre><code># This is a level 1 heading
+## This is a level 2 heading
+This is some plain text that forms a paragraph.
+Add emphasis via **bold** and __bold__, or *italic* and _italic_.
+Paragraphs must be separated by an empty line.
+* Sometimes we want to include lists.
+* Which can be indented.
+1. Lists can also be numbered.
+2. For ordered lists.
+[It is possible to include hyperlinks](https://www.example.com)
+Inline code uses single backticks: `foo()`, and code blocks use triple backticks:
+```
+bar()
+```
+Or can be indented by 4 spaces:
+    foo()
+And finally, adding images is easy: ![Alt text](https://www.example.com/image.jpg)
+</code></pre>
 
             </div>
           </article>
         </div>
         <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://zherzhao.github.io/post/windows-bian-cheng-shi-yong-yun-xing-shi-ku-ying-hu-lue-de-ku">
+                <h3 class="post-title">
+                  Windows编程使用运行时库应忽略的库
+                </h3>
+              </a>
+            </div>
           
         </div>
         
@@ -179,7 +213,7 @@ Gridea 一个静态博客写作客户端。你可以用它来记录你的生活�
     </div>
     <div class="row">
       
-        <a href="https://zherzhao.github.io/tag/Xp1crBrTv" class="badge secondary">
+        <a href="https://zherzhao.github.io/tag/Xp1crBrTv" class="badge success">
           VC
         </a>
       
