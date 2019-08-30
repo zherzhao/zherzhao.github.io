@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zherzhao.github.io</id>
     <title>ZHAO</title>
-    <updated>2019-06-26T05:10:51.937Z</updated>
+    <updated>2019-08-30T05:14:50.709Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zherzhao.github.io"/>
     <link rel="self" href="https://zherzhao.github.io/atom.xml"/>
@@ -19,17 +19,17 @@
         <content type="html"><![CDATA[<p>下表显示根据要使用的运行时库应忽略的库。
 若要使用第一行运行时库    请忽略第2行的这些库</p>
 <p>单线程 (libc.lib)</p>
-<p>libcmt.lib、msvcrt.lib、libcd.lib、libcmtd.lib、msvcrtd.lib</p>
-<p>多线程 (libcmt.lib)</p>
-<p>libc.lib、msvcrt.lib、libcd.lib、libcmtd.lib、msvcrtd.lib</p>
-<p>使用 DLL 的多线程 (msvcrt.lib)</p>
-<p>libc.lib、libcmt.lib、libcd.lib、libcmtd.lib、msvcrtd.lib</p>
+<p>libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;</p>
+<p>多线程 (libcmt.lib) (/MT)</p>
+<p>libc.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;</p>
+<p>使用 DLL 的多线程 (msvcrt.lib) (/MD)</p>
+<p>libc.lib;libcmt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;</p>
 <p>调试单线程 (libcd.lib)</p>
-<p>libc.lib、libcmt.lib、msvcrt.lib、libcmtd.lib、msvcrtd.lib</p>
-<p>调试多线程 (libcmtd.lib)</p>
-<p>libc.lib、libcmt.lib、msvcrt.lib、libcd.lib、msvcrtd.lib</p>
-<p>使用 DLL 的调试多线程 (msvcrtd.lib)</p>
-<p>libc.lib、libcmt.lib、msvcrt.lib、libcd.lib、libcmtd.lib</p>
+<p>libc.lib;libcmt.lib;msvcrt.lib;libcmtd.lib;msvcrtd.lib;</p>
+<p>调试多线程 (libcmtd.lib) (/MTd)</p>
+<p>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;msvcrtd.lib;</p>
+<p>使用 DLL 的调试多线程 (msvcrtd.lib) (/MDd)</p>
+<p>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;</p>
 ]]></content>
     </entry>
     <entry>
