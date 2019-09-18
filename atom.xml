@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zherzhao.github.io</id>
     <title>ZHAO</title>
-    <updated>2019-08-30T06:32:19.368Z</updated>
+    <updated>2019-09-18T09:04:20.277Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zherzhao.github.io"/>
     <link rel="self" href="https://zherzhao.github.io/atom.xml"/>
@@ -10,6 +10,67 @@
     <logo>https://zherzhao.github.io/images/avatar.png</logo>
     <icon>https://zherzhao.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, ZHAO</rights>
+    <entry>
+        <title type="html"><![CDATA[多媒体资源]]></title>
+        <id>https://zherzhao.github.io/post/lTRwyrnuD</id>
+        <link href="https://zherzhao.github.io/post/lTRwyrnuD">
+        </link>
+        <updated>2019-09-18T08:33:16.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Sound Effects.
+These 16,000 BBC Sound Effects are made available by the BBC in WAV format to download for use under the terms of the RemArc Licence.
+http://bbcsfx.acropolis.org.uk/</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Github资源]]></title>
+        <id>https://zherzhao.github.io/post/iBXlakzPj</id>
+        <link href="https://zherzhao.github.io/post/iBXlakzPj">
+        </link>
+        <updated>2019-09-18T08:10:41.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>gredea, A static blog writing client
+https://gridea.dev/<br>
+https://github.com/getgridea/gridea</li>
+<li>Flow, Computational framework for reinforcement learning in traffic control
+https://github.com/flow-project/flow</li>
+<li>TF-rex, Play Google Chrome's T-rex game with TensorFlow
+https://github.com/vdutor/TF-rex</li>
+<li>FlutterDouBan, Flutter豆瓣客户端
+https://github.com/kaina404/FlutterDouBan</li>
+<li>goldendict, A feature-rich dictionary lookup program
+https://github.com/goldendict/goldendict</li>
+<li>Pock, Display macOS Dock in Touch Bar
+https://github.com/pigigaldi/Pock</li>
+<li>minecraft-bedrock, a bedrock minecraft PE Server on docker
+https://github.com/LomotHo/minecraft-bedrock</li>
+<li>minecraft-server, Minecraft server with select-able version
+https://hub.docker.com/r/itzg/minecraft-server/</li>
+<li>video-object-removal, Just draw a bounding box and you can remove the object you want to remove.
+https://github.com/zllrunning/video-object-removal</li>
+<li>civitas, Civitas is an empire-building game written in Javascript with the help of the jQuery library.
+https://github.com/sizeofcat/civitas</li>
+<li>convolutional-pose-machines-tensorflow, This is the Tensorflow implementation of Convolutional Pose Machines, one of the state-of-the-art models for 2D body and hand pose estimation.
+https://github.com/timctho/convolutional-pose-machines-tensorflow</li>
+<li>ml-agents, Unity Machine Learning Agents Toolkit
+https://github.com/Unity-Technologies/ml-agents</li>
+<li>TFClassify-Unity, An example of using Tensorflow with Unity for image classification and object detection.
+https://github.com/Syn-McJ/TFClassify-Unity</li>
+<li>invadersapp, Create a simple cross-platform desktop Space Invaders game with Go
+https://github.com/sausheong/invadersapp</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Docker资源]]></title>
+        <id>https://zherzhao.github.io/post/Fo_6RaqY3</id>
+        <link href="https://zherzhao.github.io/post/Fo_6RaqY3">
+        </link>
+        <updated>2019-09-18T08:09:12.000Z</updated>
+        <content type="html"><![CDATA[<p>amaksimov/python_data_science</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Jupyter Notebook简介]]></title>
         <id>https://zherzhao.github.io/post/S7SfSeqlO</id>
@@ -71,6 +132,32 @@ And finally, adding images is easy: ![Alt text](https://www.example.com/image.jp
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[在docker中安装Python3（Ubuntu环境）]]></title>
+        <id>https://zherzhao.github.io/post/Wriv0Wtpq</id>
+        <link href="https://zherzhao.github.io/post/Wriv0Wtpq">
+        </link>
+        <updated>2019-08-19T07:55:31.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="替换国内apt源">替换国内apt源</h1>
+<p>在清华开源软件镜像站下载对应的配置文件，Ubuntu的配置文件为/etc/apt/sources.list
+https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+替换list文件后更新源</p>
+<pre><code>#apt-get update
+</code></pre>
+<h1 id="安装需要的软件">安装需要的软件</h1>
+<pre><code>安装工具
+#apt-get install gcc make
+安装依赖包
+#apt-get install zlib* bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel tcl-devel gdbm-devel db4-devel libpcap-devel xz-devel libffi-dev
+安装libressl
+# wget https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.9.0.tar.gz
+
+安装Python
+# wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
+
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Windows编程使用运行时库应忽略的库]]></title>
         <id>https://zherzhao.github.io/post/windows-bian-cheng-shi-yong-yun-xing-shi-ku-ying-hu-lue-de-ku</id>
         <link href="https://zherzhao.github.io/post/windows-bian-cheng-shi-yong-yun-xing-shi-ku-ying-hu-lue-de-ku">
@@ -90,6 +177,45 @@ And finally, adding images is easy: ![Alt text](https://www.example.com/image.jp
 <p>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;msvcrtd.lib;</p>
 <p>使用 DLL 的调试多线程 (msvcrtd.lib) (/MDd)</p>
 <p>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;</p>
+<h2 id="查看库文件属性">查看库文件属性</h2>
+<p>dumpbin
+查看dllfile.dll文件的导出信息</p>
+<pre><code>&gt;dumpbin /exports dllShareMem.dll
+Microsoft (R) COFF/PE Dumper Version 14.22.27905.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file dllShareMem.dll
+
+File Type: DLL
+
+  Section contains the following exports for dllShareMem.dll
+
+    00000000 characteristics
+    5D6F61BB time date stamp Wed Sep  4 15:03:23 2019
+        0.00 version
+           1 ordinal base
+           5 number of functions
+           5 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000110EB ?init@@YA_NPB_WI_N@Z = @ILT+230(?init@@YA_NPB_WI_N@Z)
+          2    1 00011032 ?link@@YA_NXZ = @ILT+45(?link@@YA_NXZ)
+          3    2 0001110E ?read@@YAIPAEI@Z = @ILT+265(?read@@YAIPAEI@Z)
+          4    3 00011122 ?reset@@YA_NXZ = @ILT+285(?reset@@YA_NXZ)
+          5    4 00011028 ?write@@YAIPBEI@Z = @ILT+35(?write@@YAIPBEI@Z)
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text
+       10000 .textbss
+</code></pre>
 ]]></content>
     </entry>
     <entry>

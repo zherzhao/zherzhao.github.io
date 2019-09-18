@@ -7,7 +7,7 @@
 <meta name="description" content="My Notes">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1567146687425">
+<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1568797455665">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -106,6 +106,45 @@
 <p>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;msvcrtd.lib;</p>
 <p>使用 DLL 的调试多线程 (msvcrtd.lib) (/MDd)</p>
 <p>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;</p>
+<h2 id="查看库文件属性">查看库文件属性</h2>
+<p>dumpbin
+查看dllfile.dll文件的导出信息</p>
+<pre><code>&gt;dumpbin /exports dllShareMem.dll
+Microsoft (R) COFF/PE Dumper Version 14.22.27905.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file dllShareMem.dll
+
+File Type: DLL
+
+  Section contains the following exports for dllShareMem.dll
+
+    00000000 characteristics
+    5D6F61BB time date stamp Wed Sep  4 15:03:23 2019
+        0.00 version
+           1 ordinal base
+           5 number of functions
+           5 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000110EB ?init@@YA_NPB_WI_N@Z = @ILT+230(?init@@YA_NPB_WI_N@Z)
+          2    1 00011032 ?link@@YA_NXZ = @ILT+45(?link@@YA_NXZ)
+          3    2 0001110E ?read@@YAIPAEI@Z = @ILT+265(?read@@YAIPAEI@Z)
+          4    3 00011122 ?reset@@YA_NXZ = @ILT+285(?reset@@YA_NXZ)
+          5    4 00011028 ?write@@YAIPBEI@Z = @ILT+35(?write@@YAIPBEI@Z)
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text
+       10000 .textbss
+</code></pre>
 
             </div>
           </article>
@@ -129,7 +168,7 @@
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://zherzhao.github.io/images/avatar.png?v=1567146687425" class="no-responsive avatar">
+    <img src="https://zherzhao.github.io/images/avatar.png?v=1568797455665" class="no-responsive avatar">
     <div class="text-muted">My Notes</div>
     <div class="social-container">
       
@@ -154,7 +193,31 @@
         
           
             <li>
+              <a href="https://zherzhao.github.io/post/lTRwyrnuD">多媒体资源</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://zherzhao.github.io/post/iBXlakzPj">Github资源</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://zherzhao.github.io/post/Fo_6RaqY3">Docker资源</a>
+            </li>
+          
+        
+          
+            <li>
               <a href="https://zherzhao.github.io/post/S7SfSeqlO">Jupyter Notebook简介</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://zherzhao.github.io/post/Wriv0Wtpq">在docker中安装Python3（Ubuntu环境）</a>
             </li>
           
         
