@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zherzhao.github.io</id>
     <title>ZHAO</title>
-    <updated>2019-09-18T09:17:30.119Z</updated>
+    <updated>2019-09-19T09:23:45.787Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zherzhao.github.io"/>
     <link rel="self" href="https://zherzhao.github.io/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://zherzhao.github.io/images/avatar.png</logo>
     <icon>https://zherzhao.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, ZHAO</rights>
+    <entry>
+        <title type="html"><![CDATA[Linux命令]]></title>
+        <id>https://zherzhao.github.io/post/pZitpRs14</id>
+        <link href="https://zherzhao.github.io/post/pZitpRs14">
+        </link>
+        <updated>2019-09-19T08:31:31.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>查看系统
+arch  显示机器的处理器架构
+uname -m 显示机器的处理器架构
+uname -r 显示正在使用的内核版本
+cat /proc/meminfo 校验内存使用
+cat /proc/swaps 显示哪些swap被使用
+cat /proc/version 显示内核的版本
+cat /proc/net/dev 显示网络适配器及统计
+cat /proc/mounts 显示已加载的文件系统
+cat /proc/loadavg 查看系统负载磁盘和分区
+cat /etc/redhat-release 查看redhat发行版
+swapon -s  查看所有交换分区
+w 查看活动用户
+lscpu 显示CPU信息
+lsmem
+vmstat  显示虚拟内存状态
+free 显示内存和交换区状态
+grep MemTotal /proc/meminfo  查看内存总量
+grep MemFree /proc/meminfo  查看空闲内存量
+lsipc  显示IPC信息
+lsmod 显示加载的内核模块
+df  显示分区挂载信息
+du -sh dir1 估算目录已经使用的磁盘空间
+env  查看环境变量
+uptime 显示系统运行时间、用户数、负载
+cut -d: -f1 /etc/passwd  查看系统所有用户</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[多媒体资源]]></title>
         <id>https://zherzhao.github.io/post/lTRwyrnuD</id>
