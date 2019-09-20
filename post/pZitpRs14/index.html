@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1568956051650">
+<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1568959894786">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://zherzhao.github.io/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://zherzhao.github.io">
-        <img src="https://zherzhao.github.io/images/avatar.png?v=1568956051650" class="site-logo">
+        <img src="https://zherzhao.github.io/images/avatar.png?v=1568959894786" class="site-logo">
         <h1 class="site-title">ZHAO</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -92,35 +92,35 @@
             <div class="post-content">
               <ul>
 <li>
-<p>查看系统<p>
-arch  显示机器的处理器架构<p>
-uname -m 显示机器的处理器架构<p>
-uname -r 显示正在使用的内核版本 <p>
-cat /proc/meminfo 校验内存使用 <p>
-cat /proc/swaps 显示哪些swap被使用 <p>
-cat /proc/version 显示内核的版本 <p>
-cat /proc/net/dev 显示网络适配器及统计 <p>
-cat /proc/mounts 显示已加载的文件系统 <p>
-cat /proc/loadavg 查看系统负载磁盘和分区<p>
-cat /etc/redhat-release 查看redhat发行版<p><p>
-swapon -s  查看所有交换分区 <p>
-w 查看活动用户 <p>
-lscpu 显示CPU信息 <p>
-lsmem<p>
-vmstat  显示虚拟内存状态<p>
-free 显示内存和交换区状态<p>
-grep MemTotal /proc/meminfo  查看内存总量 <p>
-grep MemFree /proc/meminfo  查看空闲内存量 <p>
-lsipc  显示IPC信息<p>
-lsmod 显示加载的内核模块<p>
-df  显示分区挂载信息<p>
-du -sh dir1 估算目录已经使用的磁盘空间<p>
-env  查看环境变量<p>
-uptime 显示系统运行时间、用户数、负载<p>
+<p>查看系统<p><br>
+arch  显示机器的处理器架构<p><br>
+uname -m 显示机器的处理器架构<p><br>
+uname -r 显示正在使用的内核版本 <p><br>
+cat /proc/meminfo 校验内存使用 <p><br>
+cat /proc/swaps 显示哪些swap被使用 <p><br>
+cat /proc/version 显示内核的版本 <p><br>
+cat /proc/net/dev 显示网络适配器及统计 <p><br>
+cat /proc/mounts 显示已加载的文件系统 <p><br>
+cat /proc/loadavg 查看系统负载磁盘和分区<p><br>
+cat /etc/redhat-release 查看redhat发行版<p><p><br>
+swapon -s  查看所有交换分区 <p><br>
+w 查看活动用户 <p><br>
+lscpu 显示CPU信息 <p><br>
+lsmem<p><br>
+vmstat  显示虚拟内存状态<p><br>
+free 显示内存和交换区状态<p><br>
+grep MemTotal /proc/meminfo  查看内存总量 <p><br>
+grep MemFree /proc/meminfo  查看空闲内存量 <p><br>
+lsipc  显示IPC信息<p><br>
+lsmod 显示加载的内核模块<p><br>
+df  显示分区挂载信息<p><br>
+du -sh dir1 估算目录已经使用的磁盘空间<p><br>
+env  查看环境变量<p><br>
+uptime 显示系统运行时间、用户数、负载<p><br>
 cut -d: -f1 /etc/passwd  查看系统所有用户 <p></p>
 </li>
 <li>
-<p>awk by example<p>
+<p>awk by example<p><br>
 https://developer.ibm.com/tutorials/l-awk1/<p></p>
 </li>
 </ul>
@@ -155,7 +155,7 @@ $2 &gt; 10     { print $0, &quot;rate exceeds $10 per hour&quot; }
 $3 &lt; 0      { print $0, &quot;negative hours worked&quot; }
 $3 &gt; 60     { print $0, &quot;too many hours worked&quot; }
 </code></pre>
-<p>BEGIN
+<p>BEGIN<br>
 BEGIN 用于匹配第一个输入文件的第一行之前的位置， END 则用于匹配处理过的最后一个文件的最后一行之后的位置。</p>
 <pre><code>	BEGIN { print &quot;Name    RATE    HOURS&quot;; print &quot;&quot;}
       { print }
@@ -256,26 +256,26 @@ END { for (i = NR; i &gt; 0; i = i - 1)
 }'	
 </code></pre>
 <ul>
-<li>改变centos目录颜色(1)<p>
-在~/.bash_profile文件中添加LS_COLORS<p>
-export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;35:<em>.cmd=01;35:</em>.exe=01;35:<em>.com=01;35:</em>.btm=01;35:<em>.bat=01;35:</em>.sh=01;35:<em>.csh=01;35:</em>.tar=01;31:<em>.tgz=01;31:</em>.arj=01;31:<em>.taz=01;31:</em>.lzh=01;31:<em>.zip=01;31:</em>.z=01;31:<em>.Z=01;31:</em>.gz=01;31:<em>.bz2=01;31:</em>.bz=01;31:<em>.tz=01;31:</em>.rpm=01;31:<em>.cpio=01;31:</em>.jpg=01;35:<em>.gif=01;35:</em>.bmp=01;35:<em>.xbm=01;35:</em>.xpm=01;35:<em>.png=01;35:</em>.tif=01;35:'<p>
+<li>改变centos目录颜色(1)<p><br>
+在~/.bash_profile文件中添加LS_COLORS<p><br>
+export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;35:<em>.cmd=01;35:</em>.exe=01;35:<em>.com=01;35:</em>.btm=01;35:<em>.bat=01;35:</em>.sh=01;35:<em>.csh=01;35:</em>.tar=01;31:<em>.tgz=01;31:</em>.arj=01;31:<em>.taz=01;31:</em>.lzh=01;31:<em>.zip=01;31:</em>.z=01;31:<em>.Z=01;31:</em>.gz=01;31:<em>.bz2=01;31:</em>.bz=01;31:<em>.tz=01;31:</em>.rpm=01;31:<em>.cpio=01;31:</em>.jpg=01;35:<em>.gif=01;35:</em>.bmp=01;35:<em>.xbm=01;35:</em>.xpm=01;35:<em>.png=01;35:</em>.tif=01;35:'<p><br>
 source ~/.bash_profile<p></li>
-<li>改变centos目录颜色(2)<p>
-cp /etc/DIR_COLORS ~/.dir_colors<p>
+<li>改变centos目录颜色(2)<p><br>
+cp /etc/DIR_COLORS ~/.dir_colors<p><br>
 DIR 01;34 改为DIR 01;35<p></li>
 <li>效果代码<p>
 <ul>
-<li>效果列表：
-00 　　　　默认
-01 　　　　加粗
-04 　　　　下划线
-05 　　　　闪烁
-07 　　　　反显
+<li>效果列表：<br>
+00 　　　　默认<br>
+01 　　　　加粗<br>
+04 　　　　下划线<br>
+05 　　　　闪烁<br>
+07 　　　　反显<br>
 08 　　　　隐藏</li>
-<li>颜色列表：
-31～37　　　　分别表示前景色为红、绿、橙、蓝、紫、青、灰
-90～97　　　　分别表示前景色为深灰、淡红、淡绿、黄色、淡蓝、淡紫、青绿、白色
-40～47　　　　分别表示背景色为黑、红、绿、橙、蓝、紫、青、灰
+<li>颜色列表：<br>
+31～37　　　　分别表示前景色为红、绿、橙、蓝、紫、青、灰<br>
+90～97　　　　分别表示前景色为深灰、淡红、淡绿、黄色、淡蓝、淡紫、青绿、白色<br>
+40～47　　　　分别表示背景色为黑、红、绿、橙、蓝、紫、青、灰<br>
 100～106　　　分别表示背景色为深灰、淡红、淡绿、黄色、淡蓝、淡紫、青绿</li>
 </ul>
 </li>

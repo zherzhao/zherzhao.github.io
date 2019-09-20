@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zherzhao.github.io</id>
     <title>ZHAO</title>
-    <updated>2019-09-20T05:17:33.611Z</updated>
+    <updated>2019-09-20T06:11:38.722Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zherzhao.github.io"/>
     <link rel="self" href="https://zherzhao.github.io/atom.xml"/>
@@ -18,35 +18,35 @@
         <updated>2019-09-19T08:31:31.000Z</updated>
         <content type="html"><![CDATA[<ul>
 <li>
-<p>查看系统<p>
-arch  显示机器的处理器架构<p>
-uname -m 显示机器的处理器架构<p>
-uname -r 显示正在使用的内核版本 <p>
-cat /proc/meminfo 校验内存使用 <p>
-cat /proc/swaps 显示哪些swap被使用 <p>
-cat /proc/version 显示内核的版本 <p>
-cat /proc/net/dev 显示网络适配器及统计 <p>
-cat /proc/mounts 显示已加载的文件系统 <p>
-cat /proc/loadavg 查看系统负载磁盘和分区<p>
-cat /etc/redhat-release 查看redhat发行版<p><p>
-swapon -s  查看所有交换分区 <p>
-w 查看活动用户 <p>
-lscpu 显示CPU信息 <p>
-lsmem<p>
-vmstat  显示虚拟内存状态<p>
-free 显示内存和交换区状态<p>
-grep MemTotal /proc/meminfo  查看内存总量 <p>
-grep MemFree /proc/meminfo  查看空闲内存量 <p>
-lsipc  显示IPC信息<p>
-lsmod 显示加载的内核模块<p>
-df  显示分区挂载信息<p>
-du -sh dir1 估算目录已经使用的磁盘空间<p>
-env  查看环境变量<p>
-uptime 显示系统运行时间、用户数、负载<p>
+<p>查看系统<p><br>
+arch  显示机器的处理器架构<p><br>
+uname -m 显示机器的处理器架构<p><br>
+uname -r 显示正在使用的内核版本 <p><br>
+cat /proc/meminfo 校验内存使用 <p><br>
+cat /proc/swaps 显示哪些swap被使用 <p><br>
+cat /proc/version 显示内核的版本 <p><br>
+cat /proc/net/dev 显示网络适配器及统计 <p><br>
+cat /proc/mounts 显示已加载的文件系统 <p><br>
+cat /proc/loadavg 查看系统负载磁盘和分区<p><br>
+cat /etc/redhat-release 查看redhat发行版<p><p><br>
+swapon -s  查看所有交换分区 <p><br>
+w 查看活动用户 <p><br>
+lscpu 显示CPU信息 <p><br>
+lsmem<p><br>
+vmstat  显示虚拟内存状态<p><br>
+free 显示内存和交换区状态<p><br>
+grep MemTotal /proc/meminfo  查看内存总量 <p><br>
+grep MemFree /proc/meminfo  查看空闲内存量 <p><br>
+lsipc  显示IPC信息<p><br>
+lsmod 显示加载的内核模块<p><br>
+df  显示分区挂载信息<p><br>
+du -sh dir1 估算目录已经使用的磁盘空间<p><br>
+env  查看环境变量<p><br>
+uptime 显示系统运行时间、用户数、负载<p><br>
 cut -d: -f1 /etc/passwd  查看系统所有用户 <p></p>
 </li>
 <li>
-<p>awk by example<p>
+<p>awk by example<p><br>
 https://developer.ibm.com/tutorials/l-awk1/<p></p>
 </li>
 </ul>
@@ -81,7 +81,7 @@ $2 &gt; 10     { print $0, &quot;rate exceeds $10 per hour&quot; }
 $3 &lt; 0      { print $0, &quot;negative hours worked&quot; }
 $3 &gt; 60     { print $0, &quot;too many hours worked&quot; }
 </code></pre>
-<p>BEGIN
+<p>BEGIN<br>
 BEGIN 用于匹配第一个输入文件的第一行之前的位置， END 则用于匹配处理过的最后一个文件的最后一行之后的位置。</p>
 <pre><code>	BEGIN { print &quot;Name    RATE    HOURS&quot;; print &quot;&quot;}
       { print }
@@ -182,26 +182,26 @@ END { for (i = NR; i &gt; 0; i = i - 1)
 }'	
 </code></pre>
 <ul>
-<li>改变centos目录颜色(1)<p>
-在~/.bash_profile文件中添加LS_COLORS<p>
-export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;35:<em>.cmd=01;35:</em>.exe=01;35:<em>.com=01;35:</em>.btm=01;35:<em>.bat=01;35:</em>.sh=01;35:<em>.csh=01;35:</em>.tar=01;31:<em>.tgz=01;31:</em>.arj=01;31:<em>.taz=01;31:</em>.lzh=01;31:<em>.zip=01;31:</em>.z=01;31:<em>.Z=01;31:</em>.gz=01;31:<em>.bz2=01;31:</em>.bz=01;31:<em>.tz=01;31:</em>.rpm=01;31:<em>.cpio=01;31:</em>.jpg=01;35:<em>.gif=01;35:</em>.bmp=01;35:<em>.xbm=01;35:</em>.xpm=01;35:<em>.png=01;35:</em>.tif=01;35:'<p>
+<li>改变centos目录颜色(1)<p><br>
+在~/.bash_profile文件中添加LS_COLORS<p><br>
+export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;35:<em>.cmd=01;35:</em>.exe=01;35:<em>.com=01;35:</em>.btm=01;35:<em>.bat=01;35:</em>.sh=01;35:<em>.csh=01;35:</em>.tar=01;31:<em>.tgz=01;31:</em>.arj=01;31:<em>.taz=01;31:</em>.lzh=01;31:<em>.zip=01;31:</em>.z=01;31:<em>.Z=01;31:</em>.gz=01;31:<em>.bz2=01;31:</em>.bz=01;31:<em>.tz=01;31:</em>.rpm=01;31:<em>.cpio=01;31:</em>.jpg=01;35:<em>.gif=01;35:</em>.bmp=01;35:<em>.xbm=01;35:</em>.xpm=01;35:<em>.png=01;35:</em>.tif=01;35:'<p><br>
 source ~/.bash_profile<p></li>
-<li>改变centos目录颜色(2)<p>
-cp /etc/DIR_COLORS ~/.dir_colors<p>
+<li>改变centos目录颜色(2)<p><br>
+cp /etc/DIR_COLORS ~/.dir_colors<p><br>
 DIR 01;34 改为DIR 01;35<p></li>
 <li>效果代码<p>
 <ul>
-<li>效果列表：
-00 　　　　默认
-01 　　　　加粗
-04 　　　　下划线
-05 　　　　闪烁
-07 　　　　反显
+<li>效果列表：<br>
+00 　　　　默认<br>
+01 　　　　加粗<br>
+04 　　　　下划线<br>
+05 　　　　闪烁<br>
+07 　　　　反显<br>
 08 　　　　隐藏</li>
-<li>颜色列表：
-31～37　　　　分别表示前景色为红、绿、橙、蓝、紫、青、灰
-90～97　　　　分别表示前景色为深灰、淡红、淡绿、黄色、淡蓝、淡紫、青绿、白色
-40～47　　　　分别表示背景色为黑、红、绿、橙、蓝、紫、青、灰
+<li>颜色列表：<br>
+31～37　　　　分别表示前景色为红、绿、橙、蓝、紫、青、灰<br>
+90～97　　　　分别表示前景色为深灰、淡红、淡绿、黄色、淡蓝、淡紫、青绿、白色<br>
+40～47　　　　分别表示背景色为黑、红、绿、橙、蓝、紫、青、灰<br>
 100～106　　　分别表示背景色为深灰、淡红、淡绿、黄色、淡蓝、淡紫、青绿</li>
 </ul>
 </li>
@@ -216,37 +216,37 @@ DIR 01;34 改为DIR 01;35<p></li>
         <updated>2019-09-18T08:33:16.000Z</updated>
         <content type="html"><![CDATA[<ul>
 <li>
-<p>Sound Effects.<p>
-These 16,000 BBC Sound Effects are made available by the BBC in WAV format to download for use under the terms of the RemArc Licence. <p>
+<p>Sound Effects.<p><br>
+These 16,000 BBC Sound Effects are made available by the BBC in WAV format to download for use under the terms of the RemArc Licence. <p><br>
 http://bbcsfx.acropolis.org.uk/</p>
 </li>
 <li>
-<p>Browse All Plants<p>
-Shown here are the 160 illustrations drawn by Elizabeth Twining from her two-volume catalog depicting the natural orders of plants. <p>
+<p>Browse All Plants<p><br>
+Shown here are the 160 illustrations drawn by Elizabeth Twining from her two-volume catalog depicting the natural orders of plants. <p><br>
 https://www.c82.net/twining/plants/</p>
 </li>
 <li>
-<p>Mathcha.io<p>
-Online Mathematics Editor<p>
+<p>Mathcha.io<p><br>
+Online Mathematics Editor<p><br>
 https://www.mathcha.io/</p>
 </li>
 <li>
-<p>AsciiMath<p>
-AsciiMath is an easy-to-write markup language for mathematics.<p>
-http://asciimath.org/<p>
+<p>AsciiMath<p><br>
+AsciiMath is an easy-to-write markup language for mathematics.<p><br>
+http://asciimath.org/<p><br>
 https://www.mathjax.org/</p>
 </li>
 <li>
-<p>Algorithm Visualizer<p>
-Algorithm Visualizer is an interactive online platform that visualizes algorithms from code.<p>
+<p>Algorithm Visualizer<p><br>
+Algorithm Visualizer is an interactive online platform that visualizes algorithms from code.<p><br>
 https://algorithm-visualizer.org/</p>
 </li>
 <li>
-<p>TikZ examples<p>
+<p>TikZ examples<p><br>
 http://www.texample.net/</p>
 </li>
 <li>
-<p>Generative Adversarial Networks<p>
+<p>Generative Adversarial Networks<p><br>
 https://blog.floydhub.com/gans-story-so-far/</p>
 </li>
 </ul>
@@ -269,51 +269,51 @@ https://blog.floydhub.com/gans-story-so-far/</p>
 <p>https://github.com/flow-project/flow</p>
 </li>
 <li>
-<p>TF-rex, Play Google Chrome's T-rex game with TensorFlow
+<p>TF-rex, Play Google Chrome's T-rex game with TensorFlow<br>
 https://github.com/vdutor/TF-rex</p>
 </li>
 <li>
-<p>FlutterDouBan, Flutter豆瓣客户端
+<p>FlutterDouBan, Flutter豆瓣客户端<br>
 https://github.com/kaina404/FlutterDouBan</p>
 </li>
 <li>
-<p>goldendict, A feature-rich dictionary lookup program
+<p>goldendict, A feature-rich dictionary lookup program<br>
 https://github.com/goldendict/goldendict</p>
 </li>
 <li>
-<p>Pock, Display macOS Dock in Touch Bar
+<p>Pock, Display macOS Dock in Touch Bar<br>
 https://github.com/pigigaldi/Pock</p>
 </li>
 <li>
-<p>minecraft-bedrock, a bedrock minecraft PE Server on docker
+<p>minecraft-bedrock, a bedrock minecraft PE Server on docker<br>
 https://github.com/LomotHo/minecraft-bedrock</p>
 </li>
 <li>
-<p>minecraft-server, Minecraft server with select-able version
+<p>minecraft-server, Minecraft server with select-able version<br>
 https://hub.docker.com/r/itzg/minecraft-server/</p>
 </li>
 <li>
-<p>video-object-removal, Just draw a bounding box and you can remove the object you want to remove.
+<p>video-object-removal, Just draw a bounding box and you can remove the object you want to remove.<br>
 https://github.com/zllrunning/video-object-removal</p>
 </li>
 <li>
-<p>civitas, Civitas is an empire-building game written in Javascript with the help of the jQuery library.
+<p>civitas, Civitas is an empire-building game written in Javascript with the help of the jQuery library.<br>
 https://github.com/sizeofcat/civitas</p>
 </li>
 <li>
-<p>convolutional-pose-machines-tensorflow, This is the Tensorflow implementation of Convolutional Pose Machines, one of the state-of-the-art models for 2D body and hand pose estimation.
+<p>convolutional-pose-machines-tensorflow, This is the Tensorflow implementation of Convolutional Pose Machines, one of the state-of-the-art models for 2D body and hand pose estimation.<br>
 https://github.com/timctho/convolutional-pose-machines-tensorflow</p>
 </li>
 <li>
-<p>ml-agents, Unity Machine Learning Agents Toolkit
+<p>ml-agents, Unity Machine Learning Agents Toolkit<br>
 https://github.com/Unity-Technologies/ml-agents</p>
 </li>
 <li>
-<p>TFClassify-Unity, An example of using Tensorflow with Unity for image classification and object detection.
+<p>TFClassify-Unity, An example of using Tensorflow with Unity for image classification and object detection.<br>
 https://github.com/Syn-McJ/TFClassify-Unity</p>
 </li>
 <li>
-<p>invadersapp, Create a simple cross-platform desktop Space Invaders game with Go
+<p>invadersapp, Create a simple cross-platform desktop Space Invaders game with Go<br>
 https://github.com/sausheong/invadersapp</p>
 </li>
 </ul>
@@ -334,14 +334,14 @@ https://github.com/sausheong/invadersapp</p>
         <link href="https://zherzhao.github.io/post/S7SfSeqlO">
         </link>
         <updated>2019-08-30T06:06:07.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">link</a>
-A notebook integrates <strong>code</strong> and its <strong>output</strong> into a single document that combines visualizations, narrative text, mathematical equations, and other rich media.
-Best of all, as part of the open source <a href="https://jupyter.org/">Project Jupyter</a>, they are completely free.
+        <content type="html"><![CDATA[<p><a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">link</a><br>
+A notebook integrates <strong>code</strong> and its <strong>output</strong> into a single document that combines visualizations, narrative text, mathematical equations, and other rich media.<br>
+Best of all, as part of the open source <a href="https://jupyter.org/">Project Jupyter</a>, they are completely free.<br>
 The Jupyter project is the successor to the earlier <strong>IPython Notebook</strong>, which was first published as a prototype in 2010.</p>
 <p>There are two main <strong>cell</strong> types that we will cover:</p>
 <ul>
 <li>A <strong>code</strong> cell contains code to be executed in the kernel and displays its output below.</li>
-<li>A <strong>Markdown</strong> cell contains text formatted using Markdown and displays its output in-place when it is run.
+<li>A <strong>Markdown</strong> cell contains text formatted using Markdown and displays its output in-place when it is run.<br>
 When you ran the cell, its output will have been displayed below and the label to its left will have changed from In [ ] to In [1].</li>
 </ul>
 <pre><code>import time
@@ -366,7 +366,7 @@ time.sleep(3)
 <li>You can also click and Shift + Click in the margin to the left of your cells to select them.</li>
 </ul>
 <h2 id="markdown">Markdown</h2>
-<p>Markdown is a lightweight, easy to learn markup language for formatting plain text.
+<p>Markdown is a lightweight, easy to learn markup language for formatting plain text.<br>
 Let’s cover the basics with a quick example.</p>
 <pre><code># This is a level 1 heading
 ## This is a level 2 heading
@@ -395,8 +395,8 @@ And finally, adding images is easy: ![Alt text](https://www.example.com/image.jp
         </link>
         <updated>2019-08-19T07:55:31.000Z</updated>
         <content type="html"><![CDATA[<h1 id="替换国内apt源">替换国内apt源</h1>
-<p>在清华开源软件镜像站下载对应的配置文件，Ubuntu的配置文件为/etc/apt/sources.list
-https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+<p>在清华开源软件镜像站下载对应的配置文件，Ubuntu的配置文件为/etc/apt/sources.list<br>
+https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/<br>
 替换list文件后更新源</p>
 <pre><code>#apt-get update
 </code></pre>
@@ -420,7 +420,7 @@ https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
         <link href="https://zherzhao.github.io/post/windows-bian-cheng-shi-yong-yun-xing-shi-ku-ying-hu-lue-de-ku">
         </link>
         <updated>2019-06-25T11:33:17.000Z</updated>
-        <content type="html"><![CDATA[<p>下表显示根据要使用的运行时库应忽略的库。
+        <content type="html"><![CDATA[<p>下表显示根据要使用的运行时库应忽略的库。<br>
 若要使用第一行运行时库    请忽略第2行的这些库</p>
 <p>单线程 (libc.lib)</p>
 <p>libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;</p>
@@ -435,7 +435,7 @@ https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
 <p>使用 DLL 的调试多线程 (msvcrtd.lib) (/MDd)</p>
 <p>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;</p>
 <h2 id="查看库文件属性">查看库文件属性</h2>
-<p>dumpbin
+<p>dumpbin<br>
 查看dllfile.dll文件的导出信息</p>
 <pre><code>&gt;dumpbin /exports dllShareMem.dll
 Microsoft (R) COFF/PE Dumper Version 14.22.27905.0
@@ -507,7 +507,7 @@ Gridea 一个静态博客写作客户端。你可以用它来记录你的生活�
 <p><a href="http://fehey.com/">示例网站</a></p>
 <p><a href="https://gridea.dev/themes/">网站主题</a></p>
 <h3 id="符号">符号</h3>
-<p>👏📝🌉 🌱😘
+<p>👏📝🌉 🌱😘<br>
 🌁💬🌎 💻📋</p>
 ]]></content>
     </entry>
