@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1568887241033">
+<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1568956051650">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://zherzhao.github.io/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://zherzhao.github.io">
-        <img src="https://zherzhao.github.io/images/avatar.png?v=1568887241033" class="site-logo">
+        <img src="https://zherzhao.github.io/images/avatar.png?v=1568956051650" class="site-logo">
         <h1 class="site-title">ZHAO</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -91,7 +91,8 @@
             
             <div class="post-content">
               <ul>
-<li>查看系统<p>
+<li>
+<p>查看系统<p>
 arch  显示机器的处理器架构<p>
 uname -m 显示机器的处理器架构<p>
 uname -r 显示正在使用的内核版本 <p>
@@ -116,7 +117,168 @@ df  显示分区挂载信息<p>
 du -sh dir1 估算目录已经使用的磁盘空间<p>
 env  查看环境变量<p>
 uptime 显示系统运行时间、用户数、负载<p>
-cut -d: -f1 /etc/passwd  查看系统所有用户 <p></li>
+cut -d: -f1 /etc/passwd  查看系统所有用户 <p></p>
+</li>
+<li>
+<p>awk by example<p>
+https://developer.ibm.com/tutorials/l-awk1/<p></p>
+</li>
+</ul>
+<p>基本语法</p>
+<pre><code>awk '{pattern + action}' 或者 awk 'pattern {action}'	
+</code></pre>
+<pre><code>awk ‑F&quot;:&quot; '{ print $1 }' /etc/passwd
+awk '/root/' /etc/passwd
+</code></pre>
+<p>emp.data:</p>
+<pre><code>Beth 	4.00 	0
+Dan 	3.75 	0
+kathy 	4.00 	10
+Mark 	5.00 	20
+Mary 	5.50 	22
+Susie 	4.25 	18
+</code></pre>
+<pre><code>awk '$3 &gt;0 { print $1, $2 * $3 }' emp.data
+awk '{ printf(&quot;%-8s $%6.2f\n&quot;, $1, $2 * $3) }' emp.data
+awk '{ printf(&quot;%6.2f    %s\n&quot;, $2 * $3, $0) }' emp.data | sort
+</code></pre>
+<p>模式</p>
+<pre><code>$2 &gt;= 4 || $3 &gt;= 20
+NF, 字段数量
+$NF, 最后一个字段
+NR, 当前行号
+</code></pre>
+<p>数据验证</p>
+<pre><code>NF != 3     { print $0, &quot;number of fields is not equal to 3&quot; }
+$2 &lt; 3.35   { print $0, &quot;rate is below minimum wage&quot; }
+$2 &gt; 10     { print $0, &quot;rate exceeds $10 per hour&quot; }
+$3 &lt; 0      { print $0, &quot;negative hours worked&quot; }
+$3 &gt; 60     { print $0, &quot;too many hours worked&quot; }
+</code></pre>
+<p>BEGIN
+BEGIN 用于匹配第一个输入文件的第一行之前的位置， END 则用于匹配处理过的最后一个文件的最后一行之后的位置。</p>
+<pre><code>	BEGIN { print &quot;Name    RATE    HOURS&quot;; print &quot;&quot;}
+      { print }
+</code></pre>
+<p>END</p>
+<pre><code>$3 &gt; 15 { emp = emp + 1 }
+END     { print emp, &quot;employees worked more than 15 hours&quot; }
+	
+END { print NR, &quot;employees&quot; }
+	
+	    { pay = pay + $2 * $3 }
+END { print NR, &quot;employees&quot;
+      print &quot;total pay is&quot;, pay
+      print &quot;average pay is&quot;, pay/NR
+    }
+</code></pre>
+<p>打印最后一个输入行</p>
+<pre><code>	{ last = $0 }
+
+END { print last }
+</code></pre>
+<p>内置函数</p>
+<pre><code>gsub(r,s) 在整个$0中用s代替r
+gsub(r,s,t) 在整个t中用s替代r
+index(s,t) 返回s中字符串t的第一位置
+length(s) 返回s长度
+match(s,r) 测试s是否包含匹配r的字符串
+split(s,a,fs) 在fs上将s分成序列a
+sprint(fmt,exp) 返回经fmt格式化后的exp
+sub(r,s) 用$0中最左边最长的子串代替s
+substr(s,p) 返回字符串s中从p开始的后缀部分
+substr(s,p,n) 返回字符串s中从p开始长度为n的后缀部分
+	{ print $1, length($1) }
+</code></pre>
+<p>行、单词以及字符的计数</p>
+<pre><code>{ nc = nc + length($0) + 1
+      nw = nw + NF
+}
+END { print NR, &quot;lines,&quot;, nw, &quot;words,&quot;, nc, &quot;characters&quot; }
+</code></pre>
+<p>if-else语句</p>
+<pre><code>$2 &gt; 6 { n = n + 1; pay = pay + $2 * $3 }
+END    { if (n &gt; 0)
+            print n, &quot;employees, total pay is&quot;, pay,
+                     &quot;average pay is&quot;, pay/n
+         else
+             print &quot;no employees are paid more than $6/hour&quot;
+        }
+</code></pre>
+<p>while语句</p>
+<pre><code># interest1 - 计算复利
+#   输入: 钱数    利率    年数
+#   输出: 复利值
+
+{   i = 1
+    while (i &lt;= $3) {
+        printf(&quot;\t%.2f\n&quot;, $1 * (1 + $2) ^ i)
+        i = i + 1
+    }
+}
+</code></pre>
+<p>for语句</p>
+<pre><code># interest1 - 计算复利
+#   输入: 钱数    利率    年数
+#   输出: 每年末的复利
+
+{ for (i = 1; i &lt;= $3; i = i + 1)
+    printf(&quot;\t%.2f\n&quot;, $1 * (1 + $2) ^ i)
+}
+</code></pre>
+<p>数组</p>
+<pre><code># 反转 - 按行逆序打印输入
+
+{ line[NR] = $0 }  # 记下每个输入行
+
+END { i = NR           # 逆序打印
+      while (i &gt; 0) {
+        print line[i]
+        i = i - 1
+      }
+}
+</code></pre>
+<pre><code># 反转 - 按行逆序打印输入，for语句实现
+
+{ line[NR] = $0 }   # 记下每个输入行
+
+END { for (i = NR; i &gt; 0; i = i - 1)
+        print line[i]
+}
+</code></pre>
+<p>算数函数</p>
+<pre><code>awk 'BEGIN {  PI = 3.14159265;  param = 30.0;  result = sin(param * PI /180);  printf(&quot;the sine of %.2f degrees is %.2f.\n&quot;, param, result)}'	
+</code></pre>
+<pre><code>awk 'BEGIN {
+  print &quot;Random num1 =&quot; , rand()
+  print &quot;Random num2 =&quot; , rand()
+  print &quot;Random num3 =&quot; , rand()
+}'	
+</code></pre>
+<ul>
+<li>改变centos目录颜色(1)<p>
+在~/.bash_profile文件中添加LS_COLORS<p>
+export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;35:<em>.cmd=01;35:</em>.exe=01;35:<em>.com=01;35:</em>.btm=01;35:<em>.bat=01;35:</em>.sh=01;35:<em>.csh=01;35:</em>.tar=01;31:<em>.tgz=01;31:</em>.arj=01;31:<em>.taz=01;31:</em>.lzh=01;31:<em>.zip=01;31:</em>.z=01;31:<em>.Z=01;31:</em>.gz=01;31:<em>.bz2=01;31:</em>.bz=01;31:<em>.tz=01;31:</em>.rpm=01;31:<em>.cpio=01;31:</em>.jpg=01;35:<em>.gif=01;35:</em>.bmp=01;35:<em>.xbm=01;35:</em>.xpm=01;35:<em>.png=01;35:</em>.tif=01;35:'<p>
+source ~/.bash_profile<p></li>
+<li>改变centos目录颜色(2)<p>
+cp /etc/DIR_COLORS ~/.dir_colors<p>
+DIR 01;34 改为DIR 01;35<p></li>
+<li>效果代码<p>
+<ul>
+<li>效果列表：
+00 　　　　默认
+01 　　　　加粗
+04 　　　　下划线
+05 　　　　闪烁
+07 　　　　反显
+08 　　　　隐藏</li>
+<li>颜色列表：
+31～37　　　　分别表示前景色为红、绿、橙、蓝、紫、青、灰
+90～97　　　　分别表示前景色为深灰、淡红、淡绿、黄色、淡蓝、淡紫、青绿、白色
+40～47　　　　分别表示背景色为黑、红、绿、橙、蓝、紫、青、灰
+100～106　　　分别表示背景色为深灰、淡红、淡绿、黄色、淡蓝、淡紫、青绿</li>
+</ul>
+</li>
 </ul>
 
             </div>
