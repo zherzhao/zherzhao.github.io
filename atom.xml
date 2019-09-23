@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zherzhao.github.io</id>
     <title>ZHAO</title>
-    <updated>2019-09-23T09:55:29.474Z</updated>
+    <updated>2019-09-23T10:20:43.185Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zherzhao.github.io"/>
     <link rel="self" href="https://zherzhao.github.io/atom.xml"/>
@@ -187,6 +187,10 @@ END { for (i = NR; i &gt; 0; i = i - 1)
 </code></pre>
 <p>统计单词出现次数</p>
 <pre><code>awk -F&quot;:&quot; '{for(i=1;i&lt;=NF;i++){num[$i]++}}END{for(n in num){print n,num[n]}}' file
+#从大到小排列
+awk -F&quot; &quot; '{for(i=1;i&lt;=NF;i++){num[$i]++}}END{for(n in num){print n,num[n]}}' tug.txt | sort -t &quot; &quot; -k 2 -nr
+#从小到大排序
+awk -F&quot; &quot; '{for(i=1;i&lt;=NF;i++){num[$i]++}}END{for(n in num){print n,num[n]}}' tug.txt | sort -t &quot; &quot; -k 2 -n
 </code></pre>
 <ul>
 <li>改变centos目录颜色(1)<br>
