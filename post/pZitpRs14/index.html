@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1569223781847">
+<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1569223931411">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://zherzhao.github.io/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://zherzhao.github.io">
-        <img src="https://zherzhao.github.io/images/avatar.png?v=1569223781847" class="site-logo">
+        <img src="https://zherzhao.github.io/images/avatar.png?v=1569223931411" class="site-logo">
         <h1 class="site-title">ZHAO</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -104,25 +104,25 @@ cat /proc/mounts 显示已加载的文件系统<br>
 cat /proc/loadavg 查看系统负载磁盘和分区<br>
 cat /etc/redhat-release 查看redhat发行版<br>
 swapon -s  查看所有交换分区<br>
-w 查看活动用户 <p><br>
-lscpu 显示CPU信息 <p><br>
-lsmem<p><br>
-ps -eo %mem,%cpu,ucmd<p><br>
-vmstat  显示虚拟内存状态<p><br>
-free 显示内存和交换区状态<p><br>
-grep MemTotal /proc/meminfo  查看内存总量 <p><br>
-grep MemFree /proc/meminfo  查看空闲内存量 <p><br>
-lsipc  显示IPC信息<p><br>
-lsmod 显示加载的内核模块<p><br>
-df  显示分区挂载信息<p><br>
-du -sh dir1 估算目录已经使用的磁盘空间<p><br>
-env  查看环境变量<p><br>
-uptime 显示系统运行时间、用户数、负载<p><br>
-cut -d: -f1 /etc/passwd  查看系统所有用户 <p></p>
+w 查看活动用户<br>
+lscpu 显示CPU信息<br>
+lsmem<br>
+ps -eo %mem,%cpu,ucmd<br>
+vmstat  显示虚拟内存状态<br>
+free 显示内存和交换区状态<br>
+grep MemTotal /proc/meminfo  查看内存总量<br>
+grep MemFree /proc/meminfo  查看空闲内存量<br>
+lsipc  显示IPC信息<br>
+lsmod 显示加载的内核模块<br>
+df  显示分区挂载信息<br>
+du -sh dir1 估算目录已经使用的磁盘空间<br>
+env  查看环境变量<br>
+uptime 显示系统运行时间、用户数、负载<br>
+cut -d: -f1 /etc/passwd  查看系统所有用户</p>
 </li>
 <li>
-<p>awk by example<p><br>
-https://developer.ibm.com/tutorials/l-awk1/<p></p>
+<p>awk by example<br>
+https://developer.ibm.com/tutorials/l-awk1/</p>
 </li>
 </ul>
 <p>基本语法</p>
@@ -259,14 +259,14 @@ END { for (i = NR; i &gt; 0; i = i - 1)
 <p>统计字段出现次数	<br>
 awk '{ip[$1]++}END{for(i in ip){print ip[i],i}}'	file</p>
 <ul>
-<li>改变centos目录颜色(1)<p><br>
-在~/.bash_profile文件中添加LS_COLORS<p><br>
-export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;35:<em>.cmd=01;35:</em>.exe=01;35:<em>.com=01;35:</em>.btm=01;35:<em>.bat=01;35:</em>.sh=01;35:<em>.csh=01;35:</em>.tar=01;31:<em>.tgz=01;31:</em>.arj=01;31:<em>.taz=01;31:</em>.lzh=01;31:<em>.zip=01;31:</em>.z=01;31:<em>.Z=01;31:</em>.gz=01;31:<em>.bz2=01;31:</em>.bz=01;31:<em>.tz=01;31:</em>.rpm=01;31:<em>.cpio=01;31:</em>.jpg=01;35:<em>.gif=01;35:</em>.bmp=01;35:<em>.xbm=01;35:</em>.xpm=01;35:<em>.png=01;35:</em>.tif=01;35:'<p><br>
-source ~/.bash_profile<p></li>
-<li>改变centos目录颜色(2)<p><br>
-cp /etc/DIR_COLORS ~/.dir_colors<p><br>
-DIR 01;34 改为DIR 01;35<p></li>
-<li>效果代码<p>
+<li>改变centos目录颜色(1)<br>
+在~/.bash_profile文件中添加LS_COLORS<br>
+export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;35:<em>.cmd=01;35:</em>.exe=01;35:<em>.com=01;35:</em>.btm=01;35:<em>.bat=01;35:</em>.sh=01;35:<em>.csh=01;35:</em>.tar=01;31:<em>.tgz=01;31:</em>.arj=01;31:<em>.taz=01;31:</em>.lzh=01;31:<em>.zip=01;31:</em>.z=01;31:<em>.Z=01;31:</em>.gz=01;31:<em>.bz2=01;31:</em>.bz=01;31:<em>.tz=01;31:</em>.rpm=01;31:<em>.cpio=01;31:</em>.jpg=01;35:<em>.gif=01;35:</em>.bmp=01;35:<em>.xbm=01;35:</em>.xpm=01;35:<em>.png=01;35:</em>.tif=01;35:'<br>
+source ~/.bash_profile</li>
+<li>改变centos目录颜色(2)<br>
+cp /etc/DIR_COLORS ~/.dir_colors<br>
+DIR 01;34 改为DIR 01;35</li>
+<li>效果代码
 <ul>
 <li>效果列表：<br>
 00 　　　　默认<br>
