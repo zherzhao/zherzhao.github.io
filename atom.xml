@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zherzhao.github.io</id>
     <title>ZHAO</title>
-    <updated>2019-09-23T07:32:16.168Z</updated>
+    <updated>2019-09-23T07:35:26.146Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zherzhao.github.io"/>
     <link rel="self" href="https://zherzhao.github.io/atom.xml"/>
@@ -18,7 +18,7 @@
         <updated>2019-09-19T08:31:31.000Z</updated>
         <content type="html"><![CDATA[<ul>
 <li>
-<p>查看系统<p><br>
+<p>查看系统<br>
 arch  显示机器的处理器架构<br>
 uname -m 显示机器的处理器架构<br>
 uname -r 显示正在使用的内核版本<br>
@@ -182,16 +182,23 @@ END { for (i = NR; i &gt; 0; i = i - 1)
   print &quot;Random num3 =&quot; , rand()
 }'	
 </code></pre>
-<p>统计字段出现次数	<br>
-awk '{ip[$1]++}END{for(i in ip){print ip[i],i}}'	file</p>
+<p>统计字段出现次数</p>
+<pre><code>awk '{ip[$1]++}END{for(i in ip){print ip[i],i}}'	file
+</code></pre>
 <ul>
 <li>改变centos目录颜色(1)<br>
-在~/.bash_profile文件中添加LS_COLORS<br>
-export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;35:<em>.cmd=01;35:</em>.exe=01;35:<em>.com=01;35:</em>.btm=01;35:<em>.bat=01;35:</em>.sh=01;35:<em>.csh=01;35:</em>.tar=01;31:<em>.tgz=01;31:</em>.arj=01;31:<em>.taz=01;31:</em>.lzh=01;31:<em>.zip=01;31:</em>.z=01;31:<em>.Z=01;31:</em>.gz=01;31:<em>.bz2=01;31:</em>.bz=01;31:<em>.tz=01;31:</em>.rpm=01;31:<em>.cpio=01;31:</em>.jpg=01;35:<em>.gif=01;35:</em>.bmp=01;35:<em>.xbm=01;35:</em>.xpm=01;35:<em>.png=01;35:</em>.tif=01;35:'<br>
-source ~/.bash_profile</li>
-<li>改变centos目录颜色(2)<br>
-cp /etc/DIR_COLORS ~/.dir_colors<br>
-DIR 01;34 改为DIR 01;35</li>
+在~/.bash_profile文件中添加LS_COLORS</li>
+</ul>
+<pre><code>export LS_COLORS='no=00:fi=00:di=01;33:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;35:*.cmd=01;35:*.exe=01;35:*.com=01;35:*.btm=01;35:*.bat=01;35:*.sh=01;35:*.csh=01;35:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tz=01;31:*.rpm=01;31:*.cpio=01;31:*.jpg=01;35:*.gif=01;35:*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.png=01;35:*.tif=01;35:'
+source ~/.bash_profile
+</code></pre>
+<ul>
+<li>改变centos目录颜色(2)</li>
+</ul>
+<pre><code>cp /etc/DIR_COLORS ~/.dir_colors
+DIR 01;34 改为DIR 01;35
+</code></pre>
+<ul>
 <li>效果代码
 <ul>
 <li>效果列表：<br>
