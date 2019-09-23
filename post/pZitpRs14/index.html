@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1569229231476">
+<link rel="shortcut icon" href="https://zherzhao.github.io/favicon.ico?v=1569232301435">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://zherzhao.github.io/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://zherzhao.github.io">
-        <img src="https://zherzhao.github.io/images/avatar.png?v=1569229231476" class="site-logo">
+        <img src="https://zherzhao.github.io/images/avatar.png?v=1569232301435" class="site-logo">
         <h1 class="site-title">ZHAO</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -258,6 +258,9 @@ END { for (i = NR; i &gt; 0; i = i - 1)
 </code></pre>
 <p>统计字段出现次数</p>
 <pre><code>awk '{ip[$1]++}END{for(i in ip){print ip[i],i}}'	file
+</code></pre>
+<p>统计单词出现次数</p>
+<pre><code>awk -F&quot;:&quot; '{for(i=1;i&lt;=NF;i++){num[$i]++}}END{for(n in num){print n,num[n]}}' file
 </code></pre>
 <ul>
 <li>改变centos目录颜色(1)<br>
