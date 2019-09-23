@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>在docker中安装Python3（Ubuntu环境） | ZHAO</title>
+<title>Docker 用法 | ZHAO</title>
 <meta name="description" content="My Notes">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -86,37 +86,26 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">在docker中安装Python3（Ubuntu环境）</h2>
-            <div class="post-date">2019-08-19</div>
+            <h2 class="post-title">Docker 用法</h2>
+            <div class="post-date">2019-09-23</div>
             
             <div class="post-content">
-              <h1 id="替换国内apt源">替换国内apt源</h1>
-<p>在清华开源软件镜像站下载对应的配置文件，Ubuntu的配置文件为/etc/apt/sources.list<br>
-https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/<br>
-替换list文件后更新源</p>
-<pre><code>#apt-get update
-</code></pre>
-<h1 id="安装需要的软件">安装需要的软件</h1>
-<pre><code>安装工具
-#apt-get install gcc make
-安装依赖包
-#apt-get install zlib* bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel tcl-devel gdbm-devel db4-devel libpcap-devel xz-devel libffi-dev
-安装libressl
-# wget https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-2.9.0.tar.gz
-
-安装Python
-# wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
-
-</code></pre>
+              <ul>
+<li>查找容器长ID<br>
+docker inspect -f '{{.ID}}' 容器的NAMES</li>
+<li>拷贝本地文件到容器<br>
+docker cp 本地路径 容器长ID:容器路径<br>
+docker cp 本地路径 <code>docker inspect -f '{{.ID}}' 容器的NAMES</code>:容器路径</li>
+</ul>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://zherzhao.github.io/post/windows-bian-cheng-shi-yong-yun-xing-shi-ku-ying-hu-lue-de-ku">
+                <a href="https://zherzhao.github.io/post/pZitpRs14">
                   <h3 class="post-title">
-                    Windows编程使用运行时库应忽略的库
+                    Linux命令
                   </h3>
                 </a>
               </div>
